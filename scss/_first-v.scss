@@ -1,0 +1,72 @@
+.bg-fv{
+  display: flex;
+}
+
+.bg-white{
+  width: 42%;
+  background-color: #fff;
+  @include tab{
+    display: none;
+  }
+  &-h{
+    position: relative;
+    top: 50%;
+    left: 35%;
+    transform: translate(-13%,-50%);
+    
+    h2{
+      font-size: 38px;
+      font-family: "ヒラギノ明朝 Pro";
+    }
+    h3{
+      font-size: 38px;
+      font-family: "Zapfino";
+    }
+  }
+}
+
+.bg-img{
+  width: 58%;  
+  overflow: hidden;
+  @include tab{
+    width: 100%;
+    position: relative;
+  
+  }
+  &-h{
+    display: none;
+    @include tab{
+      display: initial;
+      width: 75%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      h2{
+
+        @include tab{
+          color: white;
+          font-size: 150%;
+          font-family: serif;
+          text-align: center;
+        }
+        
+      }
+      h3{
+
+        @include tab{
+          color: white;
+          font-size: 500%;
+          text-align: center;
+          font-family: serif;
+          margin-bottom: 40px;
+        }
+        
+      }
+    }
+    
+  }
+  img{
+    width: 100%;
+  }
+}

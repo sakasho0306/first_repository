@@ -1,0 +1,60 @@
+.access{
+  background-color: #A193861F;
+  height: 807px;
+  .access-content{
+    display: flex;
+    width: 100%;
+    @include tab{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .content-left{
+      background-color: #D0C5BA;
+      width: 40%;
+      position: relative;
+      @include tab{
+        background-color: #D0C5BA;
+        position: initial;
+        width: 100%;
+      }
+      .left-text{
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        @include tab{
+          position: initial;
+          width: 60%;
+          margin-left: 20%;
+        }
+        h6{
+        font-size: 24px;
+        color: #00000038;
+        margin-bottom: 15px;
+        @include tab{
+          margin: 20px 0;
+        }
+        }
+        p{
+          font-size: 16px;
+          color: white;
+          line-height: 2em;
+          @include tab {
+            line-height: 2.5em;
+          }
+        }
+      }
+      
+    }
+    .content-right{
+      width: 60%;
+      @include tab{
+        width: 100%;
+        
+      }
+    }
+  }
+}
+
+.map{
+  width: 100%;
+}
