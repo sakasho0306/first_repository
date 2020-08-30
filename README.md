@@ -1,1 +1,3 @@
-# first_repository
+# はじめてのGit
+
+これは最初のコミットです。
